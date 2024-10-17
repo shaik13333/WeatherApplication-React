@@ -1,13 +1,91 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-image: url('https://img.freepik.com/free-vector/thunder-clouds-background-vector-green-with-glittery-cute-doodle-illustration-kids_53876-105742.jpg?w=1380&t=st=1728051963~exp=1728052563~hmac=f0a62a4c5093eacd84e42d29f592342fbc9be29e55c50fb1d47207f4f54f0c68');
+  background-size: cover;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 400px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  color: #444;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.weather {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.weather input[type="text"] {
+  border: 2px solid #ddd;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  width: 75%;
+  transition: all 0.3s ease;
+}
+
+.weather input[type="text"]:focus {
+  border-color: #009688;
+}
+
+.weather input[type="submit"] {
+  padding: 10px;
+  background-color: #009688;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+.weather input[type="submit"]:hover {
+  background-color: #00796b;
+}
+
+#weather-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 1.5em;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#weather-data img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+#weather-data h2 {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+#weather-data p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 8px;
 }
